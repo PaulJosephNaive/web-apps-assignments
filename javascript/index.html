@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--Greeting based on time of day-->
+    <h3>Example 1: Dynamic Greeting</h3>
+    <div id ="greetingOutput"></div>
+
+    <!--Show text when I click a button-->
+    <button onclick="setButtonText()">Example 2: Click me</button>
+    <div id="buttonClickText"></div>
+
+    <br>
+    <button onclick="setButtonDate()">Example 3: Find out the Date</button>
+    <div id ="buttonClickDate"></div>
+
+    <h3>Example 4: JavaScript numeric values</h3>
+    <form>
+        <legend>Enter Numeric Values</legend>
+        <label for="first-number">Number 1<input id ="number1"></label>
+        <br>
+        <label for="second-number">Number 2<input id ="number2"></label>
+    </form>
+    <button onclick="addNumbers()">Find the Sum of Numbers</button>
+    <div id = "Sum"></div>
+
+    <script src = "script.js"></script>
+</body>
+</html>
