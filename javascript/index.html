@@ -1,50 +1,82 @@
+<!--HTML Boilerplate provides foundational information about the HTML file and how it will appear on someone browsing your program-->
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Examples using HTML + javascript</title>
 </head>
 
 <body>
-    <!--Greeting based on time of day-->
+    <!--Header element explaining the first example-->
     <h3>Example 1: Dynamic Greeting</h3>
+    <!--Empty div element with the id of greetingOutput. The ID helps javascript apply functionality to unique elements.-->
     <div id="greetingOutput"></div>
 
-    <!--Show text when I click a button-->
-    <button onclick="setButtonText()">Example 2: Click me</button>
-    <div id="buttonClickText"></div>
+    <!--This block of code shows text when a button is clicked-->
+    <h3>Example 2: Button Click modifies HTML and displays a message</h3>
+    <button onclick="setButtonText()">Click me</button> <!--When clicked, the function setButtonText() will run-->
+    <div id="buttonClickText"></div> <!--Empty div element with the id of "buttonClickText" will get text once the button above is clicked-->
 
+    <!--Line breaks help make the website less cramped-->
     <br>
-    <button onclick="setButtonDate()">Example 3: Find out the Date</button>
-    <div id="buttonClickDate"></div>
 
+    <!--This block of code shows the date and time when a button is clicked-->
+    <h3>Example 3: Button click shows current date and time</h3>
+    <button onclick="setButtonDate()">Click me to display Date and Time</button> <!--When clicked, the setBUttonDate() function will run-->
+    <div id="buttonClickDate"></div> <!--Empty div element with the id of "buttonClickText" will have date and time once the button above is clicked-->
+
+
+    <!--This block of code adds two numbers put in the text boxes when a button is clicked-->
     <h3>Example 4: JavaScript numeric values</h3>
+    <!--Form element groups together all input-receiving elements.-->
     <form>
-        <legend>Enter Numeric Values</legend>
+        <p>Enter numeric values:</p>
+        <!--Input text boxes with the id of number1 and number2 help contain the numbers that a function in script.js will add together. Labels first-number and second-number
+        provide text to their respective input text boxes.-->
         <label for="first-number">Number 1<input id="number1"></label>
         <br>
         <label for="second-number">Number 2<input id="number2"></label>
     </form>
+    <!--When clicked, the addNumbers() function will run-->
     <button onclick="addNumbers()">Find the Sum of Numbers</button>
-    <div id="Sum"></div>
+    <div id="Sum"></div> <!--Empty div element with the id of "buttonClickText" will have the sum of the numbers once the button above is clicked-->
 
-    <h3>Example 5: JavaScript string. Click the "Try it" button t get length of
+
+    <!--This block of code helps display the length of a string in a text field-->
+    <h3>Example 5: JavaScript string. Click the "Try it" button to get length of
         the text in the text field.
     </h3>
-    <form>
+    <!--input element with the id of "textField" will be used to store a string that the findLength() function will find the length of.-->
         <label for="text">Enter text:<input id="textField" type="text"></label>
-    </form>
-    <button onclick="findLength()">Find the Length of the String!</button>
+    <button onclick="findLength()">Try it!</button>
+    <!--Empty div element which will (after findlength() function is run) display length of string in text box.-->
     <div id="length"></div>
 
+    <!--This block of code helps with making a password hidden and visible-->
     <h3>Example 6: Toggle password display</h3>
     <form>
-         <label for="password">Password:<input type="text" id="passField"></label>
-         <label for="passwordShow">Show Password:<input onclick="showPassword()" type="checkbox" id = "passwordShow"></label>
+        <!--Text box with the id of "passField" contains text of password-->
+        <label for="password">Password:<input type="password" id="passField"></label>
+        <!--This is a checkbox button which when clicked will run the showPassword function-->
+        <label for="passwordShow">Show Password:<input onclick="showPassword()" type="checkbox"
+                id="passwordShow"></label>
     </form>
 
+    <!--This block fo code helps change the color and size of text-->
+    <h3>Example 7: Change font size/color</h3>
+    <!--div element will have a different color and size  when button is clicked  and the changeColor() function is called -->
+    <div id="color">Click the button to change this text!</div>
+    <button onclick="changeColor()">Click me</button>
+
+    <!--This block of code helps hide and show a div element-->
+    <h3>Example 8: Hide/Show HTML elements</h3>
+    <!--When the button is clicked, the toggleDisplay() function is called, and the div element with the id of secret will either be hidden or visible.-->
+    <button onclick="toggleDisplay()">Toggle Display!</button>
+    <div id="secret">This is a moody message!</div>
+
+    <!--Linking of the HTML file to the javascript code with the fileName of script.js-->
     <script src="script.js"></script>
 </body>
 
