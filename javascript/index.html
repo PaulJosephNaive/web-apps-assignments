@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!--Greeting based on time of day-->
     <h3>Example 1: Dynamic Greeting</h3>
-    <div id ="greetingOutput"></div>
+    <div id="greetingOutput"></div>
 
     <!--Show text when I click a button-->
     <button onclick="setButtonText()">Example 2: Click me</button>
@@ -16,18 +18,34 @@
 
     <br>
     <button onclick="setButtonDate()">Example 3: Find out the Date</button>
-    <div id ="buttonClickDate"></div>
+    <div id="buttonClickDate"></div>
 
     <h3>Example 4: JavaScript numeric values</h3>
     <form>
         <legend>Enter Numeric Values</legend>
-        <label for="first-number">Number 1<input id ="number1"></label>
+        <label for="first-number">Number 1<input id="number1"></label>
         <br>
-        <label for="second-number">Number 2<input id ="number2"></label>
+        <label for="second-number">Number 2<input id="number2"></label>
     </form>
     <button onclick="addNumbers()">Find the Sum of Numbers</button>
-    <div id = "Sum"></div>
+    <div id="Sum"></div>
 
-    <script src = "script.js"></script>
+    <h3>Example 5: JavaScript string. Click the "Try it" button t get length of
+        the text in the text field.
+    </h3>
+    <form>
+        <label for="text">Enter text:<input id="textField" type="text"></label>
+    </form>
+    <button onclick="findLength()">Find the Length of the String!</button>
+    <div id="length"></div>
+
+    <h3>Example 6: Toggle password display</h3>
+    <form>
+         <label for="password">Password:<input type="text" id="passField"></label>
+         <label for="passwordShow">Show Password:<input onclick="showPassword()" type="checkbox" id = "passwordShow"></label>
+    </form>
+
+    <script src="script.js"></script>
 </body>
+
 </html>

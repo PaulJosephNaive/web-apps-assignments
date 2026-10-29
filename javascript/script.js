@@ -22,6 +22,7 @@ function setGreeting() {
     document.getElementById("greetingOutput").textContent = greeting;
 }
 
+//This means when the window opens, the function setGreeting will run automatically.
 window.onload = function () {
     setGreeting();
 
@@ -42,4 +43,32 @@ function addNumbers(){
     let num2 = parseInt(document.getElementById("number2").value);
     let result = num1 + num2;
     document.getElementById("Sum").textContent = result;
+}
+
+function findLength(){
+    let finalnum = document.getElementById("textField").value.length;
+    console.log(finalnum);
+    let result =  "\"" + document.getElementById("textField").value + "\"" + " has " + finalnum + " characters"
+    document.getElementById("length").textContent = result;
+}
+
+function showPassword(){
+    let status;
+    let length;
+    let final;
+    let char = "*";
+    if (passwordShow.checked){
+        status = true; 
+        console.log(status);
+    }
+    else{
+        status = false;
+        console.log(status);
+    }
+    if (!status)
+    {
+        length = document.getElementById("textField").value.length;
+        final = char.repeat(length);
+        document.getElementById("text").textContent = final;
+    }
 }
