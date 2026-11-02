@@ -47,7 +47,7 @@ function setButtonDate() {
     let now = new Date();
 
     //div element with the id of "buttonClickDate" will have the content of the user's date and time
-    document.getElementById("buttonClickDate").textContent = now.toLocaleDateString();
+    document.getElementById("buttonClickDate").textContent = now.toLocaleDateString() + ", " + now.toLocaleTimeString();
 
 }
 

@@ -1,0 +1,31 @@
+/* Styling every text element with the font Tahoma
+*/
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/*Styling the text-alignment, background, margin, border-radius, and border of of the title element.
+*/
+#title{
+    text-align: center;
+    background: rgb(92, 210, 226);
+    margin: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+/*
+Making the background color of the website the rgb value of (167, 245, 255)
+*/
+body{
+    background-color: rgb(167, 245, 255)
+}
+
+/*
+Styling the buttons by including a curved border with size of 2px.
+*/
+button{
+border-radius: 3px;
+border: 2px;
+
+}
